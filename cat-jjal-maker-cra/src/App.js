@@ -64,7 +64,7 @@ const App = () => {
   }
   return (
     <div>
-      <Title>{countingCat} 고양이 가라사대</Title>
+      <Title>{countingCat} 고양이 짤 생성</Title>
       <Form updateMainCat={updateMainCat} />
       <MainCard img={mainCat} onHeartClick={handleHeartClick} alreadyFavorite={alreadyFavorite} />
       <Favorites favorites={favorites} />

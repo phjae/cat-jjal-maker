@@ -1,38 +1,67 @@
-.App {
+html {
+  --color-black: #0e111b;
+  --color-white: #fff;
+  --color-white-50: rgba(255, 255, 255, .5);
+  --color-white-30: rgba(255, 255, 255, .3);
+  --color-white-20: rgba(255, 255, 255, .2);
+  --color-white-10: rgba(255, 255, 255, .1);
+  --color-white-5: rgba(255, 255, 255, .05);
+  --color-primary: #fdc000;
+  --color-hover: #f86a05;
+  --color-area: #1c212e;
+}
+
+body {
   text-align: center;
+  color: var(--color-white-50);
+  background-color: var(--color-black);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-card button {
+  position: relative;
+  left: -45px;
+  bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.favorites {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.favorites img {
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text {
+  border: 2px solid black;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--color-white-30);
+  background-color: var(--color-area);
+}
+
+.btn {
+  height: 40px;
+  margin-left: 5px;
+  padding: 0 25px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-black);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover {
+  background-color: var(--color-hover);
 }
